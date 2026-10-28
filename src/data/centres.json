@@ -1,0 +1,467 @@
+[
+ {
+  "name": "Borivali",
+  "address": "Borivali Center 1st & 2nd Floor, Saraswati Apartments, Opp. Bhagwati Hospital, S.V.P Road, Borivali (W), Mumbai 400092",
+  "phone": "9920767626 / 7506128787 / 9769407484",
+  "email": "reception.borivali@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Center+(MOC+Borivali",
+  "doctors": [
+   "Dr. Ashish Joshi",
+   "Dr. Pradip Kendre",
+   "Dr. Nitin Bayas",
+   "Dr. Suraj Chiraniya",
+   "Dr. Radnyi Mande"
+  ],
+  "city": "Mumbai",
+  "pin": "400092"
+ },
+ {
+  "name": "Kemps Corner",
+  "address": "1st floor, Shreepati arcade, nana Chowk, Kemps corner, August Kranti Rd, Grant Road west, mumbai, Maharashtra 400036",
+  "phone": "9769733515 / 9769714818 / 9769725707",
+  "email": "reception.kempscorner@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Centre+(MOC+India",
+  "doctors": [
+   "Dr. Vashistha Pankaj Maniar",
+   "Dr. Seema Jagiasi",
+   "Dr. Kunal Jobanputra"
+  ],
+  "city": "Mumbai",
+  "pin": "400036"
+ },
+ {
+  "name": "Ghatkopar",
+  "address": "8th Floor, Silverpoint, Opp Sukhshanti Hospital, LBS Marg, Ghatkopar West, Mumbai 400086",
+  "phone": "9987899700 / 9769707204 / 9167236781",
+  "email": "reception.ghatkopar@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Centre+(MOC+Ghatkopar",
+  "doctors": [
+   "Dr. Vashistha Pankaj Maniar",
+   "Dr. Udip Maheshwari",
+   "Dr. Swathi Krishna",
+   "Dr. Atul S. Narayankar"
+  ],
+  "city": "Mumbai",
+  "pin": "400086"
+ },
+ {
+  "name": "Thane",
+  "address": "1st Floor Blue Nile Building, Almeda Rd, next to pinnacle hospital, Charai Naka, Thane, Maharashtra 400601",
+  "phone": "7400424333 / 9167236796 / 9769746959",
+  "email": "reception.thane@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Centre+(MOC+India",
+  "doctors": [
+   "Dr. Pritam Baban Kalaskar",
+   "Dr. Smit Sheth",
+   "Dr. Ashray Shrikant Kole",
+   "Dr. Swathi Krishna",
+   "Dr. Kiran Tamkhane",
+   "Dr. Kartik Asutkar"
+  ],
+  "city": "Thane",
+  "pin": "400601"
+ },
+ {
+  "name": "Panvel",
+  "address": "Ground & 1st Floor, Tulsi Prerna Co-Operative Housing Society Ltd, shop no. 4,5,6, Plot No.9, Sector - 1, Khanda Colony, New Panvel East, Navi Mumbai, Maharashtra 410206",
+  "phone": "9769960096 / 9769600193 / 9769929707",
+  "email": "reception.panvel@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Centre+(MOC+Panvel",
+  "doctors": [
+   "Dr. Devendra Pal",
+   "Dr. Kasturi Baruah"
+  ],
+  "city": "Navi Mumbai",
+  "pin": "410206"
+ },
+ {
+  "name": "Nashik",
+  "address": "Plot No 4&5, S No 277/1/3, Aurangabad Rd, near Indrayani Lawns, Panchavati, Nashik, Maharashtra 422003",
+  "phone": "9322949845 / 8767804544 / 9322731781",
+  "email": "reception.nashik@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Centre+(MOC+India",
+  "doctors": [
+   "Dr. Sonal Dhande",
+   "Dr. Chandrashekhar Pethe"
+  ],
+  "city": "Nashik",
+  "pin": "422003"
+ },
+ {
+  "name": "Aurangabad",
+  "address": "Plot No.9,Ground & 1st Floor, Shreeka - Supremus, Vidya Nagar, Seven Hills, Beside Hotel Janki Executive, Jalna road, Aurangabad 431001",
+  "phone": "9769600345 / 9769600340 / 9769600103",
+  "email": "reception.aurangabad@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Centre+(MOC+Aurangabad",
+  "doctors": [
+   "Dr. Prakash Devde"
+  ],
+  "city": "Aurangabad",
+  "pin": "431001"
+ },
+ {
+  "name": "Shivaji Nagar",
+  "address": "Manikchand Galleria, Ground Floor, CTS-996, Final PT.383, Model Colony, Pune, Maharashtra 411016",
+  "phone": "9769771595 / 9769773595 / 9769964069",
+  "email": "reception.pune@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Center+(MOC+Pune",
+  "doctors": [
+   "Dr. Mangesh Mekha",
+   "Dr. Ritu Dave"
+  ],
+  "city": "Pune",
+  "pin": "411016"
+ },
+ {
+  "name": "Kolhapur",
+  "address": "1st and 2nd Floor, Station Road, Tararani Chowk, Kawala Naka, Beside Hotel International, Kolhapur, Maharashtra 416002",
+  "phone": "9769960092 / 9769960093 / 9769600349",
+  "email": "reception.kolhapur@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Center+(MOC+Kolhapur",
+  "doctors": [
+   "Dr. Nilesh Dhamne"
+  ],
+  "city": "Kolhapur",
+  "pin": "416002"
+ },
+ {
+  "name": "Nagpur",
+  "address": "V.K Commercial, 3rd Floor, Plot No 197, Ward No 73, above Nova Fertility Centre, Mouza Gadga, Gokulpeth, Nagpur, Maharashtra 440010",
+  "phone": "9137857037 / 9137857039 / 9137857042",
+  "email": "reception.nagpur@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Centre+(MOC+Nagpur",
+  "doctors": [
+   "Dr. Makarand Randive"
+  ],
+  "city": "Nagpur",
+  "pin": "440010"
+ },
+ {
+  "name": "Indore",
+  "address": "Plot No 3-A Ground Floor, Saket Tower, AB Road Ratlam Kothi, Near Geeta Bhavan Square Indore, Madhya Pradesh 452001",
+  "phone": "8591937291 / 8591937292 / 8591937293",
+  "email": "reception.indore@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Center+(MOC+Indore",
+  "doctors": [
+   "Dr. Taha Sethjiwala",
+   "Dr. Krushna Chaudhari"
+  ],
+  "city": "Indore",
+  "pin": "452001"
+ },
+ {
+  "name": "Mahim",
+  "address": "Plot 143, Behind Bombay Scottish School, Rajdeep Building, Lt Dilip Gupte Marg,Mahim,Mumbai,Maharashtra-400016",
+  "phone": "9321275532 / 9321275534 / 9321275530",
+  "email": "reception.mahim@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Centre+(MOC+Mahim",
+  "doctors": [
+   "Dr. Kunal Jobanputra",
+   "Dr. Arnav H. Tongaonkar"
+  ],
+  "city": "Mumbai",
+  "pin": "400016"
+ },
+ {
+  "name": "Vile Parle",
+  "address": "1st Floor, SS House, Nehru Rd, Navpada, Vile Parle East, Vile Parle, Mumbai, Maharashtra 400057",
+  "phone": "8879026609 / 9833662891 / 9920904179",
+  "email": "reception.vileparle@mocindia.co.in",
+  "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15080.9782173465!2d72.8509219!3d19.0969245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9292cf7f2b3%3A0xb546d2be6e50abf4!2sMOC%20Cancer%20Care%20%26%20Research%20Center%20(MOC%20Vileparle",
+  "doctors": [
+   "Dr. Ashish Joshi",
+   "Dr. Kshitij Chandrakant Joshi",
+   "Dr. Radnyi Mande",
+   "Dr. Arnav H. Tongaonkar"
+  ],
+  "city": "Mumbai",
+  "pin": "400057"
+ },
+ {
+  "name": "Malad",
+  "address": "2nd Floor, First Avenue, Goregaon \u2013 Mulund Link Road, opp. Inorbit Mall, near Kalpataru Pinnacle, Prem Nagar, Malad West, Mumbai, Maharashtra 400064",
+  "phone": "9769717094 / 9769710951 / 8652730387",
+  "email": "reception.malad@mocindia.co.in",
+  "map": "https://www.google.com/maps/dir//Unit+No.+201+%26+202,+2nd+Floor,+First+Avenue,+Goregaon+%E2%80%93+Mulund+Link+Road,+opp.+Inborit+Mall,+near+Kalpataru+Pinnacle,+Prem+Nagar,+Malad+West,+Mumbai,+Maharashtra+400064/@19.1738745,72.7566179,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7b7aea363ff4d:0xf4823e6a186772f!2m2!1d72.8390196!2d19.1738929?entry=ttu",
+  "doctors": [
+   "Dr. Pradip Kendre",
+   "Dr. Rup Jyoti Sarma"
+  ],
+  "city": "Mumbai",
+  "pin": "400064"
+ },
+ {
+  "name": "Pimpri Chinchwad",
+  "address": "Room No 201,2nd Floor, Geras Imperium Oasis, Morewadi, Pimpri Colony, Pune, Pimpri-Chinchwad, Maharashtra 411017",
+  "phone": "8652730388 / 9321347496 / 8652730388",
+  "email": "reception.pimprichinchwad@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Dr+Wategaonkar+cancer+clinic/@18.6311454,73.8020162,15z/data=!4m2!3m1!1s0x0:0x42c7e11a54d21cb0?sa=X&ved=2ahUKEwjowea56NmCAxWhRWwGHU1PBhcQ_BJ6BAhVEAA&hl=en",
+  "doctors": [
+   "Dr. Ravikumar Wategaonkar",
+   "Dr. Nikhil M. Shirsi",
+   "Dr. Siddhesh Tryambake"
+  ],
+  "city": "Pune",
+  "pin": "411017"
+ },
+ {
+  "name": "Mulund",
+  "address": "11th Floor, Marathon Millennium, Lal Bahadur Shastri Marg, opposite Friends school, near Nirmal Lifestyle Mall, Moti Nagar, Mulund Colony, Mulund West, Mumbai, Maharashtra 400080",
+  "phone": "9769769498 / 7021869122 / 7021869228",
+  "email": "reception.mulund@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Centre+(MOC+Mulund",
+  "doctors": [
+   "Dr. Smit Sheth",
+   "Dr. Ashray Shrikant Kole",
+   "Dr. Swathi Krishna"
+  ],
+  "city": "Mumbai",
+  "pin": "400080"
+ },
+ {
+  "name": "Swargate",
+  "address": "2nd Floor, Gaurihar, Saras Baug Rd, opp. Sanas Playground, Vijayanagar Colony, Sadashiv Peth, Pune, Maharashtra 411030",
+  "phone": "8454852508 / 7710059074 / 7710059082",
+  "email": "reception.swargate@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Centre+(MOC+Swargate",
+  "doctors": [
+   "Dr. Ashwin Rajbhoj",
+   "Dr. Tushar Patil",
+   "Dr. Reshma Puranik",
+   "Dr. Sweta Lunkad"
+  ],
+  "city": "Pune",
+  "pin": "411030"
+ },
+ {
+  "name": "Kalyani Nagar",
+  "address": "Unit 202, 2nd Floor, Suman Business Park, Kalyani Nagar, Wadgaon Sheri, Pune, Maharashtra 411014 / Contact No - 7304948611 , 7304952154",
+  "phone": "7304948611 / 7304952154 / 7304948603",
+  "email": "reception.kalyaninagar@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Centre+(MOC+Kalyani+Nagar",
+  "doctors": [
+   "Dr. Ashwin Rajbhoj",
+   "Dr. Tushar Patil",
+   "Dr. Reshma Puranik",
+   "Dr. Asma Pathan"
+  ],
+  "city": "Pune",
+  "pin": "411014"
+ },
+ {
+  "name": "Kalyan",
+  "address": "Heena Ashish Borgaonkar, 1st Floor,Kadhakpada,Kalyan,west,Maharashtra 421301 / Contact No - 9136448240",
+  "phone": "9653323167 / 9136447824 / 9136305304",
+  "email": "reception.kalyan@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Center+(MOC+Kalyan",
+  "doctors": [
+   "Dr. Kiran Tamkhane",
+   "Dr. Amol Rathod"
+  ],
+  "city": "Kalyan",
+  "pin": "421301"
+ },
+ {
+  "name": "Navrangpura",
+  "address": "1st Floor, Stadium Commerce College Road, Navrangpura, Ahmedabad - 380 009, Gujarat, INDIA",
+  "phone": "9099007706 / 7926402220 / 9099007706",
+  "email": "info@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/HOC+Vedanta+-+Cancer+Centre+in+Navrangpura/@23.040229,72.559893,15z/data=!4m6!3m5!1s0x395e84f53fffffff:0x29ab720e7bba1bce!8m2!3d23.0402291!4d72.5598934!16s%2Fg%2F1v7tjrz3?hl=en&entry=ttu&g_ep=EgoyMDI1MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+  "doctors": [
+   "Dr. Sandip Shah",
+   "Dr. Bhavin Shah",
+   "Dr. Deepa Trivedi",
+   "Dr. Kalpesh Prajapati",
+   "Dr. Sanket Shah",
+   "Dr. Chintan Shah",
+   "Dr. Jay M. Dadhania",
+   "Dr. Mansi Shah"
+  ],
+  "city": "Ahmedabad",
+  "pin": "380009"
+ },
+ {
+  "name": "Maninagar",
+  "address": "4th Floor, Rudra commercial Complex Opp. Sankalp Restaurant, Maninagar, Ahmedabad Gujarat, INDIA",
+  "phone": "9327741385 / 9327741385 / 9327741385",
+  "email": "info@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/HOC+Vedanta+-+Cancer+Centre+in+Maninagar/@22.996556,72.603917,15z/data=!4m6!3m5!1s0x395e8527e58656d3:0xd8a6d50f02fe6ea3!8m2!3d22.996556!4d72.6039169!16s%2Fg%2F11h7ktnspm?hl=en&entry=ttu&g_ep=EgoyMDI1MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+  "doctors": [
+   "Dr. Sandip Shah",
+   "Dr. Deepa Trivedi",
+   "Dr. Sanket Shah",
+   "Dr. Chintan Shah",
+   "Dr. Bharat J. Parikh"
+  ],
+  "city": "Ahmedabad",
+  "pin": ""
+ },
+ {
+  "name": "Nikol",
+  "address": "B 317, ROSEVILLE SKY Nikol - Naroda Rd, Nikol, Ahmedabad - 382330 , Gujarat , INDIA",
+  "phone": "8128347706 / 8128347706 / 8128347706",
+  "email": "info@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/HOC+Vedanta+-+Cancer+Centre+in+Nikol/@23.054533,72.664417,17z/data=!4m6!3m5!1s0x395e874de11472d5:0x16fe2b342c93d2b6!8m2!3d23.0545326!4d72.6644166!16s%2Fg%2F11rcxjvr7p?hl=en&entry=ttu&g_ep=EgoyMDI1MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+  "doctors": [
+   "Dr. Kalpesh Prajapati",
+   "Dr. Jay M. Dadhania",
+   "Dr. Abhishek C. Kakroo"
+  ],
+  "city": "Ahmedabad",
+  "pin": "382330"
+ },
+ {
+  "name": "Rajpath",
+  "address": "Opp HDFC Bank, Beside Pandit Deeyandayal Auditorium & Occura Eye Hospital, Rajpath Club Lane Off SG Higway, Ahmedabad Gujarat, INDIA",
+  "phone": "9099807706 / 7929706719 / 9099807706",
+  "email": "info@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/HOC+Vedanta+-+Cancer+Centre+in+Rajpath/@23.035365,72.502354,17z/data=!4m6!3m5!1s0x395e9bd8bd4ef93f:0x9f2c2625d2d2e2b4!8m2!3d23.0353654!4d72.5023536!16s%2Fg%2F11fjn60fsp?hl=en&entry=ttu&g_ep=EgoyMDI1MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+  "doctors": [
+   "Dr. Bhavin Shah",
+   "Dr. Chintan Shah",
+   "Dr Shailesh Talati",
+   "Dr Chirag Desai",
+   "Dr. Abhishek C. Kakroo",
+   "Dr. Rahul O. Jaiswal",
+   "Dr. Mansi Shah"
+  ],
+  "city": "Ahmedabad",
+  "pin": ""
+ },
+ {
+  "name": "Bopal",
+  "address": "3RD FLOOR 308, TCB - THE CORNER BLOCK,CELEBRATION CITY CENTER, Gala Gymkhana Rd, opp. KAVISHA, Chittavan, South Bopal, Bopal, CHITTAVAN, Ahmedabad, Gujarat 380058",
+  "phone": "7069001072 / 7069001072 / 7069001072",
+  "email": "info@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/HOC+Vedanta+-+Cancer+Centre+in+Bopal/@23.023663,72.47097,16z/data=!4m6!3m5!1s0x395e9b35578d6b0f:0xf1f342811172ddd7!8m2!3d23.0236634!4d72.47097!16s%2Fg%2F11ycbb_4yg?hl=en&entry=ttu&g_ep=EgoyMDI1MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+  "doctors": [
+   "Dr. Deepa Trivedi",
+   "Dr. Sanket Shah",
+   "Dr. Rahul O. Jaiswal"
+  ],
+  "city": "Ahmedabad",
+  "pin": "380058"
+ },
+ {
+  "name": "Baner",
+  "address": "6th Floor, Pride Gateway, above Croma, Veerbhadra Nagar, Baner, Pune, Maharashtra 411045",
+  "phone": "9004384631 / 9136856118 / 9136737896",
+  "email": "admin-baner@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Centre+(MOC+Baner",
+  "doctors": [
+   "Dr. Mangesh Mekha",
+   "Dr. Nikhil M. Shirsi",
+   "Dr. Reshma Puranik",
+   "Dr. Liza Bulsara"
+  ],
+  "city": "Pune",
+  "pin": "411045"
+ },
+ {
+  "name": "Gurugram",
+  "address": "plot 297, Sector 29, Gurugram, Haryana 122009",
+  "phone": "7400400388 / 7400400363 / 9136776638",
+  "email": "admin-gurgaon@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/MOC+Cancer+care+and+research+center/@28.4648294,77.0652652,17z/data=!4m14!1m7!3m6!1s0x390d1900550545db:0x56df5b8e6d140cd9!2sMOC+Cancer+care+and+research+center!8m2!3d28.4648294!4d77.0652652!16s%2Fg%2F11yjrjp6d0!3m5!1s0x390d1900550545db:0x56df5b8e6d140cd9!8m2!3d28.4648294!4d77.0652652!16s%2Fg%2F11yjrjp6d0?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D",
+  "doctors": [
+   "Dr. Rakesh Kumar Sharma"
+  ],
+  "city": "Gurugram",
+  "pin": "122009"
+ },
+ {
+  "name": "Lajpat Nagar",
+  "address": "First Floor, 44, Ring Rd, near Haldiram Store, Block H, Lajpat Nagar III, Lajpat Nagar, New Delhi, Delhi 110024",
+  "phone": "7400400939 / 7400400488 / 9136775598",
+  "email": "admin-lajpatnagar@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Center+(MOC+Lajpat+Nagar",
+  "doctors": [
+   "Dr. Raman Narang",
+   "Dr. Nikhil Himthani"
+  ],
+  "city": "New Delhi",
+  "pin": "110024"
+ },
+ {
+  "name": "Chembur",
+  "address": "5th Floor, Omprakash Arcade, Ambedkar Garden Circle, Chembur Gaothan, Chembur, Mumbai, Maharashtra 400071",
+  "phone": "7304345753 / 7304346018 / 7304346539",
+  "email": "admin.chembur@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Centre+(MOC+Chembur",
+  "doctors": [
+   "Dr. Udip Maheshwari",
+   "Dr. Atul S. Narayankar",
+   "Dr. Gopal Sinhal"
+  ],
+  "city": "Mumbai",
+  "pin": "400071"
+ },
+ {
+  "name": "Vashi",
+  "address": "2nd floor, The Emerald, Plot No-195B, Sector-12, Vashi, Navi Mumbai-400703.",
+  "phone": "7400176508 / 7400176597 / 7400176138",
+  "email": "reception.vashi@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Centre+-+(MOC+Vashi",
+  "doctors": [
+   "Dr. Devendra Pal",
+   "Dr. Kasturi Baruah",
+   "Dr. Gopal Sinhal"
+  ],
+  "city": "Navi Mumbai",
+  "pin": "400703"
+ },
+ {
+  "name": "Vesu",
+  "address": "1st Floor, Solaris Pulse, Vesu Main Road, nr. Vijaya Laxmi Hall, Vesu, Surat, Gujarat 395007",
+  "phone": "7069005741 / 7069005741 / 7069005741",
+  "email": "info@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/HOC+Vedanta+-+Cancer+Centre+in+Vesu+-+Surat/@21.1469643,72.7727034,17z/data=!3m1!4b1!4m6!3m5!1s0x3be053001db49d8f:0xae77adfd63eb4298!8m2!3d21.1469643!4d72.7727034!16s%2Fg%2F11zb6q__yz?entry=ttu&g_ep=EgoyMDI2MDUyNS4wIKXMDSoASAFQAw%3D%3D",
+  "doctors": [
+   "Dr. Anokhi Shah",
+   "Dr. Jayanti Patel"
+  ],
+  "city": "Surat",
+  "pin": "395007"
+ },
+ {
+  "name": "Faridabad",
+  "address": "Ground floor, BK Chowk, 5R-1A, Block F, New Industrial Twp 5, New Industrial Township, Faridabad, Haryana 121013",
+  "phone": "9289893392 / 9289893392 / 9289893391",
+  "email": "admin-faridabad@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Center+(MOC+Faridabad",
+  "doctors": [
+   "Dr. Aditya Vidushi"
+  ],
+  "city": "Faridabad",
+  "pin": "121013"
+ },
+ {
+  "name": "Pusa Road",
+  "address": "2nd Floor, Plot No 3B, Pusa Rd, Block 1, WEA, Karol Bagh, New Delhi, Delhi, 110005",
+  "phone": "9211338033 / 9211338030 / 9211338031",
+  "email": "admin-pusaroad@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/M+%7C+O+%7C+C+Cancer+Care+%26+Research+Center+(MOC+Pusa+Road",
+  "doctors": [
+   "Dr. Tanvi Singh"
+  ],
+  "city": "New Delhi",
+  "pin": "110005"
+ },
+ {
+  "name": "Thane New",
+  "address": "1st Floor, Highland Sky Towers, Lal Bahadur Shastri Marg, opp. Damani Estate, Bhakti Mandir, Panch Pakhdi, Thane West, Thane, Maharashtra 400602",
+  "phone": "7400424333 / 9167236796 / 9769746959",
+  "email": "reception.thane@mocindia.co.in",
+  "map": "https://www.google.com/maps/place/Mumbai+Oncocare+Centre+(MOC+India",
+  "doctors": [
+   "Dr. Pritam Baban Kalaskar",
+   "Dr. Smit Sheth",
+   "Dr. Ashray Shrikant Kole",
+   "Dr. Swathi Krishna",
+   "Dr. Kiran Tamkhane",
+   "Dr. Kartik Asutkar"
+  ],
+  "city": "Thane",
+  "pin": "400602"
+ }
+]
