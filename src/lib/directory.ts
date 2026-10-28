@@ -3,6 +3,7 @@ export type DirectoryDoctor = {
   speciality: string;
   quals: string;
   href: string;
+  photo?: string;
   centres: string[];
   previewCentre: string;
   previewSpeciality: string;

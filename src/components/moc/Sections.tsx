@@ -38,7 +38,7 @@ const Section = ({ id, className = "", children, labelledBy }: { id?: string; cl
   </section>
 );
 
-const Heading = ({ title, intro, id }: { title: string; intro?: string; id: string }) => (
+const Heading = ({ title, intro, id }: { title: ReactNode; intro?: string; id: string }) => (
   <div className="max-w-2xl">
     <h2 id={id} className="text-[34px] leading-[1.1] md:text-[52px]">{title}</h2>
     {intro && <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-muted-foreground">{intro}</p>}
@@ -57,23 +57,22 @@ export function Hero() {
   };
   return (
     <section className="relative overflow-hidden bg-paper">
-      <img src={hero} alt="A doctor in a warm conversation with a patient and her daughter — concept photography" width={1920} height={1024} className="hero-photo" />
+      <img src={hero} alt="A doctor in a warm conversation with a patient and her daughter" width={1920} height={1024} className="hero-photo" />
       <div className="hero-wash" aria-hidden />
       <div className="container-moc hero-content">
         <div className="hero-copy animate-rise">
           <h1 className="text-[42px] leading-[1.05] md:text-[68px]">Cancer care, close to home.</h1>
           <p className="mt-6 max-w-md text-[18px] leading-relaxed text-ink">Specialist oncology with guidance you can understand — for you and the people beside you.</p>
-          <form role="search" onSubmit={submit} className="mt-10 max-w-lg">
+          <form role="search" onSubmit={submit} className="mt-10 max-w-xl">
             <label htmlFor="hero-centre" className="sr-only">Enter area, city or pincode</label>
             <div className="flex items-center gap-2 rounded-full border border-input bg-card p-1.5 pl-5 shadow-lift focus-within:border-primary">
               <MapPin className="size-5 shrink-0 text-primary" aria-hidden />
               <input id="hero-centre" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Enter area, city or pincode" className="h-12 min-w-0 flex-1 bg-transparent text-[16px] outline-none placeholder:text-muted-foreground/70" />
-              <Button type="submit" className="h-12 rounded-full px-6"><Search className="sm:hidden" aria-hidden /><span className="hidden sm:inline">Find Centre</span><span className="sr-only sm:hidden">Find Centre</span></Button>
+              <Button type="submit" className="h-12 rounded-full px-6 whitespace-nowrap shrink-0"><Search className="sm:hidden" aria-hidden /><span className="hidden sm:inline">Find center near you</span><span className="sr-only sm:hidden">Find center near you</span></Button>
             </div>
           </form>
         </div>
       </div>
-      <span className="absolute bottom-3 right-5 text-[10px] text-ink">Concept photography</span>
     </section>
   );
 }
@@ -87,7 +86,19 @@ export function WhyMoc() {
     <Section id="why" labelledBy="why-h">
       <div className="deco-blob -right-40 -top-40" aria-hidden />
       <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-end">
-        <Heading id="why-h" title="What makes MOC different" intro="Specialist care and the support around it, brought closer to where you live." />
+        <Heading
+          id="why-h"
+          title={
+            <>
+              What makes{" "}
+              <span className="whitespace-nowrap font-bold">
+                M<span className="mx-1 text-primary/40 font-light select-none" aria-hidden>|</span>O<span className="mx-1 text-primary/40 font-light select-none" aria-hidden>|</span>C
+              </span>{" "}
+              different
+            </>
+          }
+          intro="Specialist care and the support around it, brought closer to where you live."
+        />
         <dl className="grid grid-cols-3 gap-6 border-t border-primary/20 pt-6">
           {stats.map((s) => (
             <div key={s.label}>
@@ -100,7 +111,7 @@ export function WhyMoc() {
         </dl>
       </div>
       <div className="mt-14 flex justify-end"><CarouselControls c={c} label="differentiator" /></div>
-      <ul ref={c.ref} tabIndex={0} onKeyDown={c.onKeyDown} aria-label="What makes MOC different — use arrow keys to scroll" className="no-scrollbar mt-6 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-2">
+      <ul ref={c.ref} tabIndex={0} onKeyDown={c.onKeyDown} aria-label="What makes M | O | C different — use arrow keys to scroll" className="no-scrollbar mt-6 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-2">
         {differentiators.map((d, i) => {
           const Icon = diffIcons[i] ?? Stethoscope;
           return (
@@ -137,7 +148,7 @@ export function Treatments() {
       </div>
       <ul ref={c.ref} tabIndex={0} onKeyDown={c.onKeyDown} aria-label="Treatments — use arrow keys to scroll" className="no-scrollbar mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-2">
         {treatmentCards.map(({ title, text, img, icon: Icon, partner }) => (
-          <li key={title} className="w-[80%] shrink-0 snap-start sm:w-[46%] lg:w-[calc((100%-48px)/3)]">
+          <li key={title} className="w-[85%] shrink-0 snap-start sm:w-[calc((100%-24px)/2)] md:w-[calc((100%-48px)/3)] lg:w-[calc((100%-72px)/4)]">
             <a href="/treatments" className="group block">
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
                 <img src={img} alt="" loading="lazy" width={960} height={1200} className="size-full object-cover transition duration-700 group-hover:scale-[1.04]" />
@@ -155,7 +166,6 @@ export function Treatments() {
           </li>
         ))}
       </ul>
-      <p className="mt-6 text-xs text-muted-foreground">Concept photography — not MOC patients or facilities.</p>
     </Section>
   );
 }
@@ -316,7 +326,7 @@ const journeySteps = [
 
 export function Journey() {
   return (
-    <section id="journey" aria-labelledby="journey-h" className="relative isolate overflow-hidden py-16 md:py-24 bg-[#fafbfc]">
+    <section id="journey" aria-labelledby="journey-h" className="relative isolate overflow-hidden pt-16 pb-10 md:pt-24 md:pb-14 bg-[#fafbfc]">
       {/* Ambient background soft pastel blobs */}
       <div className="absolute -top-28 -left-24 w-[500px] h-[400px] rounded-[50%] bg-[#eeebff]/60 blur-3xl pointer-events-none" aria-hidden />
       <div className="absolute top-1/2 -right-28 w-[520px] h-[520px] rounded-full bg-[#f0f9ff]/70 blur-3xl pointer-events-none" aria-hidden />
@@ -335,14 +345,14 @@ export function Journey() {
               </p>
             </div>
 
-            {/* Doctor & Patient Photo: Edge-to-edge, no box */}
-            <div className="relative mt-8 sm:mt-10 w-full">
+            {/* Doctor & Patient Photo */}
+            <div className="relative mt-8 sm:mt-10 w-full overflow-hidden rounded-2xl">
               <img
                 src={journeyDoctorPatient}
                 alt="A compassionate female doctor consulting and warmly holding hands with a smiling cancer patient"
                 width={1280}
                 height={800}
-                className="w-full h-auto object-cover object-center aspect-[16/10] sm:aspect-[16/9] lg:aspect-[16/9.5] rounded-none"
+                className="w-full h-auto object-cover object-center aspect-[16/10] sm:aspect-[16/9] lg:aspect-[16/9.5] rounded-2xl"
                 loading="lazy"
               />
             </div>
@@ -408,7 +418,6 @@ export function Gallery() {
     <Section id="spaces" labelledBy="spaces-h" className="bg-paper">
       <div className="flex flex-wrap items-end justify-between gap-6">
         <Heading id="spaces-h" title="Spaces designed for comfort" intro="Bright, calm settings for consultations and day-care treatment." />
-        <Tag>Concept photography — not MOC facilities</Tag>
       </div>
       <div className="mt-12 grid gap-6 lg:grid-cols-[1.7fr_1fr]">
         {gallery.map((g, i) => (
@@ -426,7 +435,7 @@ export function Gallery() {
             {current && <>
               <img src={current.src} alt={current.alt} className="max-h-[78vh] w-full rounded-xl object-cover" />
               <div className="mt-4 flex items-center justify-between gap-4 text-ink-foreground">
-                <div><Dialog.Title className="font-display text-xl">{current.title}</Dialog.Title><Dialog.Description className="text-xs opacity-75">Concept photography — not an MOC facility · {(open ?? 0) + 1} / {gallery.length}</Dialog.Description></div>
+                <div><Dialog.Title className="font-display text-xl">{current.title}</Dialog.Title><Dialog.Description className="text-xs opacity-75">{(open ?? 0) + 1} / {gallery.length}</Dialog.Description></div>
                 <div className="flex gap-2">
                   <Button size="icon" variant="outline" className="rounded-full" aria-label="Previous image" onClick={() => move(-1)}><ArrowLeft /></Button>
                   <Button size="icon" variant="outline" className="rounded-full" aria-label="Next image" onClick={() => move(1)}><ArrowRight /></Button>
@@ -467,20 +476,32 @@ export function CentreFinder() {
   return (
     <Section id="centres" labelledBy="centres-h">
       <div className="deco-blob -left-48 top-10" aria-hidden />
-      <Heading id="centres-h" title="A centre near you" intro="Browse by city. Each centre lists its address, phone and directions." />
+      <Heading id="centres-h" title="33 Centers. Find the center near you" intro="Browse by city. Each centre lists its address, phone and directions." />
       <div className="mt-10 flex flex-wrap gap-2" role="group" aria-label="Filter centres by city">
-        {["All", ...cities].map((c) => (
-          <Button variant="outline" key={c} type="button" aria-pressed={!heroQuery && city === c} onClick={() => pick(c)}
-            className={`rounded-full px-4 ${!heroQuery && city === c ? "border-primary bg-primary text-primary-foreground hover:bg-ink hover:text-primary-foreground" : "border-input bg-card hover:border-primary"}`}>
-            {c}
+        {["All", ...cities].map((c) => {
+          const count = c === "All" ? centres.length : centres.filter((item) => item.city === c).length;
+          return (
+            <Button
+              variant="outline"
+              key={c}
+              type="button"
+              aria-pressed={!heroQuery && city === c}
+              onClick={() => pick(c)}
+              className={`rounded-full px-4 ${!heroQuery && city === c ? "border-primary bg-primary text-primary-foreground hover:bg-ink hover:text-primary-foreground" : "border-input bg-card hover:border-primary"}`}
+            >
+              {c} ({count})
+            </Button>
+          );
+        })}
+      </div>
+      {heroQuery && (
+        <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground" aria-live="polite">
+          <span>Search results for “{heroQuery}” ({results.length}):</span>
+          <Button variant="outline" size="sm" className="rounded-full border-primary/30 text-primary" onClick={() => pick("All")} aria-label={`Clear search: ${heroQuery}`}>
+            Clear<X className="size-3.5" />
           </Button>
-        ))}
-      </div>
-      <div className="mt-8 flex flex-wrap items-center gap-3 text-sm text-muted-foreground" aria-live="polite">
-        <span className="font-semibold text-ink">{results.length} {results.length === 1 ? "centre" : "centres"}</span>
-        {heroQuery && <Button variant="outline" size="sm" className="rounded-full border-primary/30 text-primary" onClick={() => pick("All")} aria-label={`Clear search: ${heroQuery}`}>“{heroQuery}”<X /></Button>}
-        <Tag>Prototype</Tag><span>Details copied from mocindia.co.in, not a live directory</span>
-      </div>
+        </div>
+      )}
       <ul className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {results.slice(0, limit).map((c) => {
           const phone = centrePhone(c.phone);
@@ -515,19 +536,18 @@ export function CentreFinder() {
 /* 9 · Brand film */
 export function BrandFilm() {
   return (
-    <section aria-labelledby="film-h" className="pb-20 md:pb-28">
+    <section aria-labelledby="film-h" className="py-8 md:py-10">
       <div className="container-moc">
         <Dialog.Root>
           <div className="relative overflow-hidden rounded-2xl">
             <img src={careTeam} alt="" loading="lazy" width={1600} height={900} className="aspect-[4/5] w-full object-cover sm:aspect-[21/9]" />
             <div className="film-scrim absolute inset-0" aria-hidden />
             <div className="absolute inset-0 flex flex-col justify-end p-7 md:p-14">
-              <span className="self-start"><Tag>Concept placeholder — not an existing MOC film</Tag></span>
               <h2 id="film-h" className="mt-4 max-w-2xl text-[32px] leading-[1.1] text-ink-foreground md:text-[56px]">Care that feels human.</h2>
               <p className="mt-3 max-w-md text-ink-foreground/85">A short film about the people behind MOC care.</p>
             </div>
             <Dialog.Trigger asChild>
-              <button type="button" aria-label="Play brand film (placeholder)" className="absolute left-1/2 top-1/2 grid size-20 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-card text-primary shadow-lift transition hover:scale-105 md:size-24">
+              <button type="button" aria-label="Play brand film" className="absolute left-1/2 top-1/2 grid size-20 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-card text-primary shadow-lift transition hover:scale-105 md:size-24">
                 <span className="absolute inset-0 animate-ping rounded-full bg-card/40 motion-reduce:hidden" aria-hidden />
                 <Play className="relative size-8 fill-current" aria-hidden />
               </button>
@@ -537,7 +557,7 @@ export function BrandFilm() {
             <Dialog.Overlay className="fixed inset-0 z-50 bg-ink/85" />
             <Dialog.Content className="fixed left-1/2 top-1/2 z-50 w-[calc(100%-2rem)] max-w-3xl -translate-x-1/2 -translate-y-1/2 rounded-xl bg-card p-3">
               <div className="grid aspect-video place-items-center rounded-lg bg-paper text-center">
-                <div className="px-6"><Play className="mx-auto size-10 text-primary" aria-hidden /><Dialog.Title className="mt-4 font-display text-2xl text-ink">Brand film placeholder</Dialog.Title><Dialog.Description className="mt-2 text-sm text-muted-foreground">MOC’s official film will play here once supplied.</Dialog.Description></div>
+                <div className="px-6"><Play className="mx-auto size-10 text-primary" aria-hidden /><Dialog.Title className="mt-4 font-display text-2xl text-ink">About MOC Cancer Care</Dialog.Title><Dialog.Description className="mt-2 text-sm text-muted-foreground">Specialist oncology and compassionate care close to home.</Dialog.Description></div>
               </div>
               <Dialog.Close asChild><Button size="icon" variant="ghost" className="absolute right-4 top-4" aria-label="Close video"><X /></Button></Dialog.Close>
             </Dialog.Content>
@@ -812,7 +832,7 @@ export function Footer() {
       </div>
       <div className="border-t border-ink-foreground/15">
         <div className="container-moc flex flex-wrap items-center justify-between gap-4 py-6 text-[13px] opacity-70">
-          <p>© {new Date().getFullYear()} M | O | C Cancer Care &amp; Research Centre. Design concept — not the live website.</p>
+          <p>© {new Date().getFullYear()} M | O | C Cancer Care &amp; Research Centre. All rights reserved.</p>
           <div className="flex gap-5">
             <a href="https://www.mocindia.co.in/privacy-policy" className="hover:underline">Privacy Policy</a>
             <a href="https://www.mocindia.co.in/term-and-condition" className="hover:underline">Terms &amp; Conditions</a>

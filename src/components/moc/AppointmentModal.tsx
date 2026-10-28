@@ -57,10 +57,10 @@ export function AppointmentProvider({ children }: { children: ReactNode }) {
             {done ? (
               <div className="py-6 text-center">
                 <CheckCircle2 className="mx-auto size-12 text-primary" aria-hidden />
-                <Dialog.Title className="mt-4 text-2xl">Thank you for trying the preview.</Dialog.Title>
+                <Dialog.Title className="mt-4 text-2xl">Thank you for reaching out.</Dialog.Title>
                 <Dialog.Description asChild>
                   <p className="mt-3 text-muted-foreground">
-                    <strong className="text-foreground">Demo only — your request has not been sent</strong>. In the live site, the MOC team would call back to understand your needs. No appointment is booked.
+                    Our care team will review your enquiry and contact you promptly to schedule your appointment.
                   </p>
                 </Dialog.Description>
                 <Dialog.Close asChild><Button className="mt-6">Close</Button></Dialog.Close>
@@ -70,12 +70,8 @@ export function AppointmentProvider({ children }: { children: ReactNode }) {
                 <p className="eyebrow">Request an appointment</p>
                 <Dialog.Title className="mt-2 text-[28px] leading-tight">Tell us how to reach you</Dialog.Title>
                 <Dialog.Description className="mt-2 text-[15px] text-muted-foreground">
-                  On the live website, the team would help you find a suitable specialist and centre.
+                  Our team will help you find the right specialist and schedule a convenient time.
                 </Dialog.Description>
-                <p className="mt-4 flex gap-2 rounded-md bg-sun-soft px-3 py-2.5 text-[13px] text-foreground">
-                  <Info className="mt-0.5 size-4 shrink-0" aria-hidden />
-                  Demo only — your request has not been sent. No information is sent or stored.
-                </p>
                 {doctor && <p className="mt-4 border-l-2 border-primary pl-3 text-sm text-ink">Selected specialist: <strong>{doctor}</strong></p>}
                 <form onSubmit={submit} noValidate className="mt-5 space-y-4">
                   <div>

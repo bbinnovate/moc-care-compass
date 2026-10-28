@@ -8,10 +8,11 @@ import { services, moreServices } from "@/data/content";
 import { useAppointment } from "./AppointmentModal";
 
 const nav = [
-  { label: "Find a Doctor", href: "/#specialists" },
-  { label: "Our Centres", href: "/#centres" },
-  { label: "Patient Resources", href: "/#resources" },
-  { label: "About MOC", href: "/#why" },
+  { label: "Our process", href: "/#journey" },
+  { label: "Find a doctor", href: "/#specialists" },
+  { label: "Gallery", href: "/#spaces" },
+  { label: "Our Center", href: "/#centres" },
+  { label: "Testimonial", href: "/#stories" },
 ];
 const icons = [Droplet, ShieldPlus, Target, Dna, Flower2, Salad];
 const languages = ["English", "हिन्दी", "मराठी", "ગુજરાતી"];
@@ -21,11 +22,10 @@ function LanguageSelect({ id }: { id: string }) {
   return (
     <div className="flex items-center gap-1.5">
       <Globe className="size-3.5 text-primary" aria-hidden />
-      <label htmlFor={id} className="sr-only">Language (preview — content stays in English)</label>
+      <label htmlFor={id} className="sr-only">Select language</label>
       <select id={id} value={lang} onChange={(e) => setLang(e.target.value)} className="cursor-pointer bg-transparent text-[13px] font-medium text-ink outline-none">
         {languages.map((l) => <option key={l}>{l}</option>)}
       </select>
-      {lang !== "English" && <span className="text-[11px] text-muted-foreground">Translation preview</span>}
     </div>
   );
 }

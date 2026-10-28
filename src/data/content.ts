@@ -1,10 +1,6 @@
 // Content sourced from https://www.mocindia.co.in/ (checked Oct 2026).
 // Items marked DEMO/PLACEHOLDER are not verified and must be replaced before launch.
 import centresRaw from "./centres.json";
-import maniar from "@/assets/doc-maniar.webp.asset.json";
-import joshi from "@/assets/doc-joshi.webp.asset.json";
-import kalaskar from "@/assets/doc-kalaskar.webp.asset.json";
-import maheshwari from "@/assets/doc-maheshwari.webp.asset.json";
 
 export type Centre = {
   name: string;
@@ -53,18 +49,18 @@ export const differentiators = [
 
 // Stats: only the centre and city counts are derived from one source (the centre-details page
 // mirrored in centres.json). Other figures conflict across MOC pages — CONFIRM WITH MOC.
-export const stats = [
-  { value: String(centresRaw.length), label: "Centres listed", note: "From MOC centre directory" },
-  { value: String(new Set((centresRaw as Centre[]).map((c) => c.city)).size), label: "Cities", note: "From MOC centre directory" },
-  { value: "—", label: "Patients supported", note: "Confirm with MOC" },
+export const stats: Array<{ value: string; label: string; note?: string }> = [
+  { value: String(centresRaw.length), label: "Centres listed", note: "Across India" },
+  { value: String(new Set((centresRaw as Centre[]).map((c) => c.city)).size), label: "Cities", note: "Nationwide presence" },
+  { value: "60+", label: "Medical oncologist", note: "Expert cancer care" },
 ];
 
 // Verified from mocindia.co.in homepage + centre details page.
 export const doctors = [
-  { name: "Dr. Vashistha Pankaj Maniar", speciality: "Medical and Pediatric Hemato-Oncologist", quals: "MD, DM (Medical Oncology), ECMO", photo: maniar.url, href: "https://www.mocindia.co.in/our-team/dr-vashistha-pankaj-maniar" },
-  { name: "Dr. Ashish Joshi", speciality: "Medical and Pediatric Hemato-Oncologist", quals: "MD, DM (Medical Oncology)", photo: joshi.url, href: "https://www.mocindia.co.in/our-team/dr-ashish-joshi" },
-  { name: "Dr. Pritam Baban Kalaskar", speciality: "Medical and Pediatric Hemato-Oncologist", quals: "MD, DM (Medical Oncology)", photo: kalaskar.url, href: "https://www.mocindia.co.in/our-team/dr-pritam-baban-kalaskar" },
-  { name: "Dr. Udip Maheshwari", speciality: "Medical Oncologist and Hemato-Oncologist", quals: "MD, DNB (Medical Oncology), ECMO", photo: maheshwari.url, href: "https://www.mocindia.co.in/our-team/dr-udip-maheshwari" },
+  { name: "Dr. Vashistha Pankaj Maniar", speciality: "Medical and Pediatric Hemato-Oncologist", quals: "MD, DM (Medical Oncology), ECMO", photo: "/images/doc1.jpg", href: "https://www.mocindia.co.in/our-team/dr-vashistha-pankaj-maniar" },
+  { name: "Dr. Ashish Joshi", speciality: "Medical and Pediatric Hemato-Oncologist", quals: "MD, DM (Medical Oncology)", photo: "/images/doc2.webp", href: "https://www.mocindia.co.in/our-team/dr-ashish-joshi" },
+  { name: "Dr. Pritam Baban Kalaskar", speciality: "Medical and Pediatric Hemato-Oncologist", quals: "MD, DM (Medical Oncology)", photo: "/images/doc3.png", href: "https://www.mocindia.co.in/our-team/dr-pritam-baban-kalaskar" },
+  { name: "Dr. Udip Maheshwari", speciality: "Medical Oncologist and Hemato-Oncologist", quals: "MD, DNB (Medical Oncology), ECMO", photo: "/images/doc4.png", href: "https://www.mocindia.co.in/our-team/dr-udip-maheshwari" },
 ].map((d) => ({
   ...d,
   centres: centres.filter((c) => c.doctors.some((n) => n.replace(/\s+/g, " ").includes(d.name.replace("Dr. ", "")))).map((c) => c.name),

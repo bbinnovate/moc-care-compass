@@ -154,7 +154,7 @@
 
 .hero-photo { position: absolute; inset: 0; height: 100%; width: 100%; object-fit: cover; object-position: center; }
 .hero-wash { position: absolute; inset: 0; background: var(--hero-scrim); }
-.hero-content { position: relative; padding-block: 72px 88px; min-height: 610px; }
+.hero-content { position: relative; padding-block: 108px 96px; min-height: 680px; display: flex; flex-direction: column; justify-content: center; }
 .hero-copy { max-width: 490px; }
 .section-number { display: inline-flex; align-items: center; gap: 12px; }
 .section-number::before { content: ""; width: 22px; height: 3px; background: var(--sun); }

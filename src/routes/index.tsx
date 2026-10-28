@@ -22,12 +22,11 @@ function Index() {
       <WhyMoc />
       <Treatments />
       <Journey />
+      <BrandFilm />
       <Specialists />
       <Gallery />
       <CentreFinder />
-      <BrandFilm />
       <Stories />
-      <Resources />
     </>
   );
 }
