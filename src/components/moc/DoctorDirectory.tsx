@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
-import { ArrowRight, MapPin, Search, UserRound, X } from "lucide-react";
+import { ArrowRight, ChevronDown, MapPin, Search, UserRound, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { doctors } from "@/data/content";
 import { emptyDoctorFilters, filterDoctors, withPreviewFilters, type DirectoryDoctor, type DoctorFilters } from "@/lib/directory";
@@ -44,12 +44,18 @@ export function DoctorDirectory() {
               <input id="doctor-keyword" value={filters.keyword} onChange={(e) => update("keyword", e.target.value)} placeholder="Search by doctor name or speciality" className="h-12 min-w-0 flex-1 bg-transparent text-[15px] outline-none" />
             </div>
           </div>
-          {selectors.map(({ key, label, all, options }) => <div key={key}>
+          {selectors.map(({ key, label, all, options }) => <div key={key} className="relative">
             <label htmlFor={`doctor-${key}`} className="sr-only">{label}</label>
-            <select id={`doctor-${key}`} value={filters[key]} onChange={(e) => update(key, e.target.value)} className="h-[50px] w-full rounded-full border border-input bg-card px-5 text-[15px]">
+            <select
+              id={`doctor-${key}`}
+              value={filters[key]}
+              onChange={(e) => update(key, e.target.value)}
+              className="h-[50px] w-full appearance-none rounded-full border border-input bg-card pl-5 pr-11 text-[15px] outline-none focus:border-primary cursor-pointer"
+            >
               <option value="">{all}</option>
               {options.map((o) => <option key={o}>{o}</option>)}
             </select>
+            <ChevronDown className="pointer-events-none absolute right-5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" aria-hidden />
           </div>)}
         </div>
         <div className="mt-4 flex min-h-8 flex-wrap items-center gap-2 px-1">

@@ -18,9 +18,10 @@ import gReception from "@/assets/g-reception.jpg";
 import gLounge from "@/assets/g-lounge.jpg";
 import gConsult from "@/assets/g-consult.jpg";
 import journeyDoctorPatient from "@/assets/journey-doctor-patient.jpg";
-import tSurvivor1 from "@/assets/testimonial-1.jpg";
-import tSurvivor2 from "@/assets/testimonial-2.jpg";
-import tSurvivor3 from "@/assets/testimonial-3.jpg";
+const tSurvivor1 = "/images/img1.jpg";
+const tSurvivor2 = "/images/img2.jpg";
+const tSurvivor3 = "/images/img3.jpg";
+const tSurvivor4 = "/images/img4.jpg";
 import logoLight from "@/assets/moc-logo-light.svg";
 import { Button } from "@/components/ui/button";
 import { centrePhone, searchCentres } from "@/lib/directory";
@@ -163,7 +164,8 @@ export function Treatments() {
 const journeySteps = [
   {
     step: "01",
-    title: "Get an expert doctor coach",
+    line1: "Get an expert",
+    line2: "doctor coach",
     badgeBg: "bg-[#f3e8ff]",
     badgeText: "text-[#7c3aed]",
     badgeBorder: "border-[#e9d5ff]",
@@ -185,7 +187,8 @@ const journeySteps = [
   },
   {
     step: "02",
-    title: "Consult with the best Oncologist",
+    line1: "Consult with the",
+    line2: "best Oncologist",
     badgeBg: "bg-[#e0f2fe]",
     badgeText: "text-[#0284c7]",
     badgeBorder: "border-[#bae6fd]",
@@ -205,7 +208,8 @@ const journeySteps = [
   },
   {
     step: "03",
-    title: "Consult with integrative experts",
+    line1: "Consult with",
+    line2: "integrative experts",
     badgeBg: "bg-[#dcfce7]",
     badgeText: "text-[#059669]",
     badgeBorder: "border-[#bbf7d0]",
@@ -227,7 +231,8 @@ const journeySteps = [
   },
   {
     step: "04",
-    title: "Reduce growth of cancer cells",
+    line1: "Reduce growth of",
+    line2: "cancer cells",
     badgeBg: "bg-[#ffedd5]",
     badgeText: "text-[#d97706]",
     badgeBorder: "border-[#fed7aa]",
@@ -250,7 +255,8 @@ const journeySteps = [
   },
   {
     step: "05",
-    title: "Join the most trusted cancer community",
+    line1: "Join the most trusted",
+    line2: "cancer community",
     badgeBg: "bg-[#fce7f3]",
     badgeText: "text-[#db2777]",
     badgeBorder: "border-[#fbcfe8]",
@@ -270,7 +276,8 @@ const journeySteps = [
   },
   {
     step: "06",
-    title: "Regular guidance from the experts",
+    line1: "Regular guidance",
+    line2: "from the experts",
     badgeBg: "bg-[#e0f2fe]",
     badgeText: "text-[#0284c7]",
     badgeBorder: "border-[#bae6fd]",
@@ -289,7 +296,8 @@ const journeySteps = [
   },
   {
     step: "07",
-    title: "Become Cancer free",
+    line1: "Become Cancer",
+    line2: "free",
     badgeBg: "bg-[#dcfce7]",
     badgeText: "text-[#16a34a]",
     badgeBorder: "border-[#bbf7d0]",
@@ -315,7 +323,7 @@ export function Journey() {
       <div className="absolute -bottom-28 left-1/4 w-[500px] h-[500px] rounded-full bg-[#e8f8f0]/60 blur-3xl pointer-events-none" aria-hidden />
 
       <div className="container-moc relative z-10">
-        <div className="grid gap-10 lg:grid-cols-[6fr_4fr] xl:grid-cols-[6fr_4fr] items-center">
+        <div className="grid gap-8 lg:gap-10 md:grid-cols-[5.6fr_4.4fr] lg:grid-cols-[6fr_4fr] items-center">
           {/* Left Column (60%): Heading, Subtitle & End-to-End Image */}
           <div className="flex flex-col">
             <div>
@@ -327,22 +335,16 @@ export function Journey() {
               </p>
             </div>
 
-            {/* Doctor & Patient Photo: Natural End-to-End presentation */}
+            {/* Doctor & Patient Photo: Edge-to-edge, no box */}
             <div className="relative mt-8 sm:mt-10 w-full">
-              {/* Soft ambient background glows */}
-              <div className="absolute -bottom-6 -right-6 w-64 h-64 rounded-full bg-[#dcfce7]/60 blur-2xl pointer-events-none" aria-hidden />
-              <div className="absolute -top-6 -left-6 w-56 h-56 rounded-full bg-[#ede9fe]/50 blur-2xl pointer-events-none" aria-hidden />
-              
-              <div className="relative z-10 w-full overflow-hidden rounded-2xl sm:rounded-3xl shadow-[0_12px_36px_rgba(5,72,112,0.06)] bg-card border border-border/60">
-                <img
-                  src={journeyDoctorPatient}
-                  alt="A compassionate female doctor consulting and warmly holding hands with a smiling cancer patient"
-                  width={1280}
-                  height={800}
-                  className="w-full h-auto object-cover object-center aspect-[16/10] sm:aspect-[16/9] lg:aspect-[16/9.5]"
-                  loading="lazy"
-                />
-              </div>
+              <img
+                src={journeyDoctorPatient}
+                alt="A compassionate female doctor consulting and warmly holding hands with a smiling cancer patient"
+                width={1280}
+                height={800}
+                className="w-full h-auto object-cover object-center aspect-[16/10] sm:aspect-[16/9] lg:aspect-[16/9.5] rounded-none"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -350,35 +352,36 @@ export function Journey() {
           <div className="relative w-full">
             {/* Continuous vertical timeline connector line */}
             <div
-              className="absolute left-[19px] sm:left-[21px] top-5 bottom-5 w-[1.5px] bg-[#dbe4ef] pointer-events-none"
+              className="absolute left-[21px] sm:left-[23px] top-6 bottom-6 w-[1.5px] bg-[#dbe4ef] pointer-events-none"
               aria-hidden
             />
 
             <ol className="relative flex flex-col gap-3 sm:gap-3.5 list-none m-0 p-0">
               {journeySteps.map((s) => (
-                <li key={s.step} className="group relative flex items-center gap-3 sm:gap-4">
+                <li key={s.step} className="group relative flex items-center gap-3.5 sm:gap-4">
                   {/* Number Badge */}
                   <span
-                    className={`relative z-10 flex size-10 sm:size-11 shrink-0 items-center justify-center rounded-[13px] sm:rounded-[15px] font-display text-xs sm:text-[13.5px] font-bold shadow-[0_2px_8px_rgba(0,0,0,0.02)] transition-all duration-300 group-hover:scale-105 ${s.badgeBg} ${s.badgeText} ${s.badgeBorder}`}
+                    className={`relative z-10 flex size-11 sm:size-12 shrink-0 items-center justify-center rounded-full font-display text-[14px] sm:text-[15px] font-bold shadow-[0_2px_8px_rgba(0,0,0,0.02)] transition-all duration-300 group-hover:scale-105 border ${s.badgeBg} ${s.badgeText} ${s.badgeBorder}`}
                   >
                     {s.step}
                   </span>
 
                   {/* Step Pill Card */}
                   <div
-                    className={`flex flex-1 items-center gap-3 sm:gap-4 rounded-[18px] sm:rounded-[22px] border py-2.5 sm:py-3 px-3.5 sm:px-4.5 shadow-[0_2px_8px_rgba(15,35,60,0.02)] transition-all duration-300 hover:shadow-[0_6px_20px_rgba(15,35,60,0.06)] hover:-translate-y-0.5 ${s.cardBg} ${s.cardBorder}`}
+                    className={`flex flex-1 items-center gap-3.5 sm:gap-4 rounded-[22px] sm:rounded-[26px] border py-2.5 sm:py-3 px-4 sm:px-5 shadow-[0_2px_8px_rgba(15,35,60,0.02)] transition-all duration-300 hover:shadow-[0_6px_20px_rgba(15,35,60,0.06)] hover:-translate-y-0.5 ${s.cardBg} ${s.cardBorder}`}
                   >
                     {/* Icon Container */}
                     <div
-                      className={`flex size-9 sm:size-10 shrink-0 items-center justify-center rounded-[11px] sm:rounded-[13px] transition-transform duration-300 group-hover:scale-105 ${s.iconBg} ${s.iconColor}`}
+                      className={`flex size-11 sm:size-12 shrink-0 items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-105 ${s.iconBg} ${s.iconColor}`}
                     >
                       {s.icon}
                     </div>
 
-                    {/* Step Title */}
-                    <span className="font-sans text-[13.5px] sm:text-[15px] font-semibold text-[#1e293b] leading-snug">
-                      {s.title}
-                    </span>
+                    {/* Step Title: 17px, 2 lines */}
+                    <div className="font-sans text-[17px] font-semibold text-[#1e293b] leading-[1.3]">
+                      <span className="block">{s.line1}</span>
+                      <span className="block">{s.line2}</span>
+                    </div>
                   </div>
                 </li>
               ))}
@@ -552,21 +555,24 @@ const communityStories = [
     role: "Breast Cancer Survivor · Treated at MOC Mumbai",
     quote: "Love MOC! Exceptional care and compassionate doctors. They made every step of our treatment smooth and hopeful. The guidance from our doctor coach gave my entire family peace of mind.",
     image: tSurvivor1,
-    avatar: tSurvivor1,
+  },
+  {
+    name: "Sunita Verma",
+    role: "Lymphoma Survivor · Treated at MOC Thane",
+    quote: "From day one, the doctors treated me with immense warmth and clinical excellence. Today, I am back to living fully, healthy and cancer-free. MOC truly stands beside you at every step.",
+    image: tSurvivor2,
   },
   {
     name: "Rajesh Kulkarni",
     role: "Caregiver & Son · MOC Pune",
     quote: "Having specialist cancer care so close to home changed everything. Less travel meant more time with family, and the clinical team was always accessible to answer every question with empathy.",
-    image: tSurvivor2,
-    avatar: tSurvivor2,
+    image: tSurvivor3,
   },
   {
-    name: "Sunita Varma",
-    role: "Lymphoma Survivor · Treated at MOC Thane",
-    quote: "From day one, the doctors treated me with immense warmth and clinical excellence. Today, I am back to living fully, healthy and cancer-free. MOC truly stands beside you at every step.",
-    image: tSurvivor3,
-    avatar: tSurvivor3,
+    name: "Arjun Mehta",
+    role: "Leukemia Survivor · Treated at MOC Mumbai",
+    quote: "MOC's integrative approach gave me confidence at every stage of my treatment. The doctor coach, the community, and the specialists — all working together for my recovery.",
+    image: tSurvivor4,
   },
 ];
 
@@ -590,21 +596,21 @@ export function Stories() {
   };
 
   return (
-    <section id="stories" aria-labelledby="stories-h" className="relative isolate overflow-hidden py-20 md:py-28 bg-[#00588c]">
-      {/* Brand ambient glows */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(65,178,222,0.22),transparent_55%)] pointer-events-none" aria-hidden />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_75%,rgba(5,72,112,0.45),transparent_50%)] pointer-events-none" aria-hidden />
+    <section id="stories" aria-labelledby="stories-h" className="relative isolate overflow-hidden py-20 md:py-28 bg-[#e2f2ff]">
+      {/* Subtle ambient glows */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(65,178,222,0.12),transparent_55%)] pointer-events-none" aria-hidden />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_75%,rgba(0,88,140,0.07),transparent_50%)] pointer-events-none" aria-hidden />
 
       <div className="container-moc relative z-10">
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-white/15 text-white backdrop-blur-sm border border-white/20 uppercase tracking-wider font-sans">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#00588c]/10 text-[#00588c] border border-[#00588c]/20 uppercase tracking-wider font-sans">
             Voices from our community
           </span>
-          <h2 id="stories-h" className="mt-4 font-display text-[32px] sm:text-[44px] md:text-[50px] font-semibold text-white tracking-tight leading-[1.15]">
+          <h2 id="stories-h" className="mt-4 font-display text-[32px] sm:text-[44px] md:text-[50px] font-semibold text-[#054870] tracking-tight leading-[1.15]">
             Real stories of hope, strength and recovery.
           </h2>
-          <p className="mt-3 text-[16px] md:text-[17px] text-white/80 max-w-xl mx-auto font-sans leading-relaxed">
+          <p className="mt-3 text-[16px] md:text-[17px] text-[#054870]/75 max-w-xl mx-auto font-sans leading-relaxed">
             Genuine experiences from patients and caregivers who trusted MOC on their treatment journey.
           </p>
         </div>
@@ -653,57 +659,45 @@ export function Stories() {
               <article
                 key={story.name}
                 style={{ zIndex }}
-                className={`absolute inset-y-0 mx-auto overflow-hidden rounded-[26px] md:rounded-[34px] border-2 border-white/90 bg-[#141820] flex items-center transition-all duration-400 ease-out transform ${cardClasses}`}
+                className={`absolute inset-y-0 mx-auto overflow-hidden rounded-[26px] md:rounded-[34px] border-2 border-[#00588c]/20 bg-[#054870] flex items-center shadow-[0_8px_32px_rgba(0,88,140,0.15)] transition-all duration-400 ease-out transform ${cardClasses}`}
               >
-                {/* Full-width background image */}
+                {/* Full-width background image — photo fills right side, no overlay */}
                 <img
                   src={story.image}
                   alt={story.name}
-                  className="absolute inset-0 size-full object-cover object-center"
+                  className="absolute inset-0 size-full object-cover object-right"
                 />
 
-                {/* Gradient scrim */}
-                <div
-                  className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/35 md:to-black/20"
-                  aria-hidden
-                />
 
                 {/* Card Content */}
-                <div className="relative z-10 p-7 sm:p-10 md:p-14 max-w-2xl w-full flex flex-col justify-between min-h-[360px] md:min-h-[420px]">
+                <div className="relative z-10 p-7 sm:p-10 md:p-14 max-w-[60%] w-full flex flex-col justify-between min-h-[360px] md:min-h-[420px]">
                   <div>
                     {/* Quote icon */}
-                    <div className="text-white/95">
-                      <Quote className="size-9 sm:size-11 fill-white text-white drop-shadow" />
+                    <div className="text-white/90">
+                      <Quote className="size-9 sm:size-11 fill-white/90 text-white/90" />
                     </div>
 
                     {/* 5 Stars */}
                     <div className="flex items-center gap-1.5 mt-3.5 sm:mt-4 text-[#f59e0b]">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="size-4 sm:size-4.5 fill-[#f59e0b] text-[#f59e0b] drop-shadow-sm" />
+                        <Star key={i} className="size-4 sm:size-4.5 fill-[#f59e0b] text-[#f59e0b]" />
                       ))}
                     </div>
 
                     {/* Testimonial Quote */}
-                    <blockquote className="mt-4 sm:mt-5 font-sans italic text-white text-[16.5px] sm:text-[18.5px] md:text-[20.5px] leading-relaxed font-normal drop-shadow-sm">
+                    <blockquote className="mt-4 sm:mt-5 font-sans italic text-white text-[15px] sm:text-[17px] md:text-[19px] leading-relaxed font-normal">
                       "{story.quote}"
                     </blockquote>
                   </div>
 
-                  {/* Author Profile Row */}
-                  <div className="flex items-center gap-3.5 sm:gap-4 mt-6 pt-5 border-t border-white/20">
-                    <img
-                      src={story.avatar}
-                      alt={story.name}
-                      className="size-11 sm:size-13 rounded-full border-2 border-white object-cover shadow-md shrink-0"
-                    />
-                    <div>
-                      <span className="font-display font-semibold text-white text-[15.5px] sm:text-[17px] block drop-shadow-sm">
-                        {story.name}
-                      </span>
-                      <span className="text-xs sm:text-[14px] text-white/80 block mt-0.5 drop-shadow-sm">
-                        {story.role}
-                      </span>
-                    </div>
+                  {/* Author Name & Role — no avatar image */}
+                  <div className="mt-6 pt-5 border-t border-white/25">
+                    <span className="font-display font-semibold text-white text-[15.5px] sm:text-[17px] block">
+                      {story.name}
+                    </span>
+                    <span className="text-xs sm:text-[14px] text-white/75 block mt-0.5">
+                      {story.role}
+                    </span>
                   </div>
                 </div>
               </article>
@@ -717,7 +711,7 @@ export function Stories() {
             <Button
               variant="outline"
               size="icon"
-              className="size-11 rounded-full border-primary/25 text-primary bg-background hover:bg-accent hover:text-accent-foreground"
+              className="size-11 rounded-full border-[#00588c]/30 text-[#00588c] bg-white/70 hover:bg-[#00588c]/10 hover:text-[#00588c] shadow-none"
               aria-label="Previous story"
               disabled={isSliding}
               onClick={() => changeStory("prev")}
@@ -727,7 +721,7 @@ export function Stories() {
             <Button
               variant="outline"
               size="icon"
-              className="size-11 rounded-full border-primary/25 text-primary bg-background hover:bg-accent hover:text-accent-foreground"
+              className="size-11 rounded-full border-[#00588c]/30 text-[#00588c] bg-white/70 hover:bg-[#00588c]/10 hover:text-[#00588c] shadow-none"
               aria-label="Next story"
               disabled={isSliding}
               onClick={() => changeStory("next")}
