@@ -15,6 +15,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { AppointmentProvider } from "@/components/moc/AppointmentModal";
 import { Header } from "@/components/moc/Header";
 import { Footer } from "@/components/moc/Sections";
+import { DesktopOnlyGate } from "@/components/moc/DesktopOnlyGate";
 
 function NotFoundComponent() {
   return (
@@ -120,6 +121,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <AppointmentProvider>
+        <DesktopOnlyGate />
         <Header />
         <main>
           <Outlet />

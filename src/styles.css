@@ -170,3 +170,18 @@
   .hero-content { min-height: auto; padding-block: 32px 24px; }
   .hero-copy { max-width: 100%; }
 }
+
+/* Mobile view restriction: professional black screen requesting desktop view */
+.desktop-only-gate {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .desktop-only-gate {
+    display: flex !important;
+  }
+  body {
+    overflow: hidden !important;
+  }
+}
+
